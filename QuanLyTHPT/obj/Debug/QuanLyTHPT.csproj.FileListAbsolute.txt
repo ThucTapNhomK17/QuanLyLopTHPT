@@ -1,0 +1,12 @@
+D:\NAM\QuanLyTHPT\QuanLyTHPT\bin\Debug\QuanLyTHPT.exe.config
+D:\NAM\QuanLyTHPT\QuanLyTHPT\bin\Debug\QuanLyTHPT.exe
+D:\NAM\QuanLyTHPT\QuanLyTHPT\bin\Debug\QuanLyTHPT.pdb
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csprojAssemblyReference.cache
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.Form1.resources
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.Properties.Resources.resources
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.GenerateResource.cache
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.CoreCompileInputs.cache
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.exe
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.pdb
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.Form2.resources
+D:\NAM\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.Form3.resources
