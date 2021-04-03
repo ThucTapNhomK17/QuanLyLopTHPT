@@ -82,6 +82,7 @@ namespace QuanLyTHPT
 
         private void butTim_Click(object sender, EventArgs e)
         {
+        
             string sqlTimKiem ="SELECT * FROM giaovien WHERE magv = @magv";
             SqlCommand cmd = new SqlCommand(sqlTimKiem, con);
             cmd.Parameters.AddWithValue("magv", txtTim.Text);
