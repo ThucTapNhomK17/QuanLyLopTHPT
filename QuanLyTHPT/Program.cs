@@ -18,6 +18,7 @@ namespace QuanLyTHPT
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             //chinh sua finish v2
+            //finish v3
         }
     }
 }
