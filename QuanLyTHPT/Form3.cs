@@ -66,6 +66,34 @@ namespace QuanLyTHPT
             cmd.ExecuteNonQuery();
             HienThi();
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string sqlDELETE = "DELETE FROM giaovien WHERE magv = @magv";
+            SqlCommand cmd = new SqlCommand(sqlDELETE, con);
+            cmd.Parameters.AddWithValue("magv", txtMGV.Text);
+            cmd.Parameters.AddWithValue("tengv", txtTGV.Text);
+            cmd.Parameters.AddWithValue("ngaysinh", txtNSGV.Text);
+            cmd.Parameters.AddWithValue("gioitinh", txtGT.Text);
+            cmd.Parameters.AddWithValue("mamon", txtMM.Text);
+            cmd.ExecuteNonQuery();
+            HienThi();
+        }
+
+        private void butTim_Click(object sender, EventArgs e)
+        {
+            string sqlTimKiem ="SELECT * FROM giaovien WHERE magv = @magv";
+            SqlCommand cmd = new SqlCommand(sqlTimKiem, con);
+            cmd.Parameters.AddWithValue("magv", txtTim.Text);
+            cmd.Parameters.AddWithValue("tengv", txtTGV.Text);
+            cmd.Parameters.AddWithValue("ngaysinh", txtNSGV.Text);
+            cmd.Parameters.AddWithValue("gioitinh", txtGT.Text);
+            cmd.Parameters.AddWithValue("mamon", txtMM.Text);
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dsGV.DataSource = dt;
+        }
 
         
     }
