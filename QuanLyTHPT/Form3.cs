@@ -26,7 +26,6 @@ namespace QuanLyTHPT
             con.Open();
             HienThi();
         }
-
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
             con.Close();
