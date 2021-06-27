@@ -65,6 +65,7 @@ namespace QuanLyTHPT
             cmd.ExecuteNonQuery();
             HienThi();
         }
+        //xoa giao vien
         private void button3_Click(object sender, EventArgs e)
         {
             string sqlDELETE = "DELETE FROM giaovien WHERE magv = @magv";
