@@ -21,7 +21,7 @@ namespace QuanLyTHPT
             InitializeComponent();
         }
         
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-G3E7L6G\SQLEXPRESS;Initial Catalog=QuanLyTHPT;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TJGABJT\MSSQLSERVER2706;Initial Catalog=QuanLyTHPT;Integrated Security=True");
 
         private void Loaddulieu(string sql)
         {

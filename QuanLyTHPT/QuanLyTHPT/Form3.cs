@@ -45,7 +45,7 @@ namespace QuanLyTHPT
 
         //Tạo đối tượng connection
         //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-G3E7L6G\SQLEXPRESS;Initial Catalog=QuanLyTHPT;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TJGABJT\MSSQLSERVER2706;Initial Catalog=QuanLyTHPT;Integrated Security=True");
 
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -100,14 +100,14 @@ namespace QuanLyTHPT
             }
             else
             {
-                string sqlINSERT = "INSERT INTO giaovien VALUES(@magv,@tengv,@ngaysinh,@gioitinh,@mamon,@luong)";
+                string sqlINSERT = "INSERT INTO giaovien(magv,tengv,ngaysinh,mamon,gioitinh,luong) VALUES(@magv,@tengv,@ngaysinh,@mamon,@gioitinh,@luong)";
                 SqlCommand cmd = new SqlCommand(sqlINSERT, con);
                 cmd.Parameters.AddWithValue("magv", txtMAGV.Text);
                 cmd.Parameters.AddWithValue("tengv", txtTGV.Text);
                 cmd.Parameters.AddWithValue("ngaysinh", dtpNS.Text);
                 cmd.Parameters.AddWithValue("gioitinh", cbbGT.Text);
                 cmd.Parameters.AddWithValue("mamon", cbbmamon.Text);
-                cmd.Parameters.AddWithValue("luong", txtluong.Text);
+                cmd.Parameters.AddWithValue("luong", txtluong.Text);            
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm giáo viên thành công!");
                 cleartext();
@@ -157,7 +157,7 @@ namespace QuanLyTHPT
                 btnThem.Enabled = true;
                 btnXoa.Enabled = btnSua.Enabled = false;
                 unlocktext();
-                string sqlEdit = "UPDATE giaovien SET magv = @magv, tengv = @tengv,ngaysinh=@ngaysinh,gioitinh=@gioitinh,mamon=@mamon, luong = @luong WHERE magv=@magv";
+                string sqlEdit = "UPDATE giaovien SET magv = @magv, tengv = @tengv, ngaysinh=@ngaysinh, mamon=@mamon, gioitinh=@gioitinh , luong = @luong WHERE magv=@magv";
                 SqlCommand cmd = new SqlCommand(sqlEdit, con);
                 cmd.Parameters.AddWithValue("magv", txtMAGV.Text);
                 cmd.Parameters.AddWithValue("tengv", txtTGV.Text);

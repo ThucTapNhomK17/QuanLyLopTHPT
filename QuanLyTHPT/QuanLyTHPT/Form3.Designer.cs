@@ -38,6 +38,7 @@ namespace QuanLyTHPT
             this.panel2 = new System.Windows.Forms.Panel();
             this.dsGV = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtTim = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@ namespace QuanLyTHPT
             this.txtTGV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTim = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsGV)).BeginInit();
             this.panel3.SuspendLayout();
@@ -144,6 +144,7 @@ namespace QuanLyTHPT
             // 
             // dsGV
             // 
+            this.dsGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dsGV.Location = new System.Drawing.Point(9, 24);
             this.dsGV.Name = "dsGV";
@@ -174,6 +175,14 @@ namespace QuanLyTHPT
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(795, 289);
             this.panel3.TabIndex = 27;
+            // 
+            // txtTim
+            // 
+            this.txtTim.Location = new System.Drawing.Point(328, 61);
+            this.txtTim.Multiline = true;
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(165, 34);
+            this.txtTim.TabIndex = 26;
             // 
             // button4
             // 
@@ -434,14 +443,6 @@ namespace QuanLyTHPT
             this.label2.Size = new System.Drawing.Size(115, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Tên Giáo Viên";
-            // 
-            // txtTim
-            // 
-            this.txtTim.Location = new System.Drawing.Point(328, 61);
-            this.txtTim.Multiline = true;
-            this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(165, 34);
-            this.txtTim.TabIndex = 26;
             // 
             // Form3
             // 
